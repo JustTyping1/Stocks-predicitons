@@ -1,3 +1,3 @@
-# Wildfire-prediction
+# Stock-prediction
 
-- Using climate data to predict where wildifires are going to occur.
+- Using stock data to precdict how they will move

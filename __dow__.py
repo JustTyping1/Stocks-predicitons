@@ -23,14 +23,14 @@ def dow():
         model = LinearRegression()
         model.fit(X, Y)
         predictions = model.predict([[ int(dowentry.get()) ], [int(dowentry.get())]])
-        ansdow = tk.Label(text = "I PREDICT... \n" + str(predictions[1]))
+        ansdow = tk.Label(window, text = "I PREDICT... \n" + str(predictions[1]))
         ansdow.pack()
 
-    intro = tk.Label(text = "ENTER OPEN PRICE >")
+    intro = tk.Label(window, text = "ENTER OPEN PRICE >")
     intro.pack()
     global dowentry
-    dowentry = tk.Entry()
-    dowpredictbutton = tk.Button(text = "Predict!", command = dowpredict)
+    dowentry = tk.Entry(window)
+    dowpredictbutton = tk.Button(window, text = "Predict!", command = dowpredict)
     dowentry.pack()
     dowpredictbutton.pack()
 

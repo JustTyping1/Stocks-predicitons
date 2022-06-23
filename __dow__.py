@@ -11,7 +11,7 @@ def dow():
 
     def dowpredict():
 
-        data = pd.read_csv('HistoricalPrices.csv')
+        data = pd.read_csv('data/dowjoneshistoricalprices.csv')
 
         X = data.drop(columns=['Date'])
         del X[' Close']
@@ -22,7 +22,7 @@ def dow():
 
         model = LinearRegression()
         model.fit(X, Y)
-        predictions = model.predict([[ int(dowentry.get()) ], [int(dowentry.get())]])
+        predictions = model.predict([[ round(int(dowentry.get()), 2) ], [round(int(dowentry.get()), 2)]])
         ansdow = tk.Label(window, text = "I PREDICT... \n" + str(predictions[1]))
         ansdow.pack()
 

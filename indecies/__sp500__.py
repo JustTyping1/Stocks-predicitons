@@ -8,6 +8,7 @@ import tkinter as tk
 def sp500():
 
     window3 = tk.Tk()
+    window3.title("S&P 500")
 
     def sppredict():
 

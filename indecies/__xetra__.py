@@ -8,6 +8,7 @@ import tkinter as tk
 def xetra():
 
     window4 = tk.Tk()
+    window4.title("XETRA DAX")
 
     def xetrapredict():
 

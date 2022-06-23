@@ -8,6 +8,7 @@ import tkinter as tk
 def dow():
 
     window = tk.Tk()
+    window.title("DOW JONES IND. AVG.")
 
     def dowpredict():
 

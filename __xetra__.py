@@ -13,8 +13,7 @@ def xetra():
 
         data = pd.read_csv('data/xetrahistoricalprices.csv')
 
-        X = data.drop(columns=['Date'])
-        del X[' Close']
+        X = data.drop(columns=[' Close'])
         del X[' High']
         del X[' Low']
 
